@@ -139,7 +139,7 @@ with col5:
         data=total_spend,
         x="Customer type",
         y="Total",
-        palette="Set3",
+        palette="Set1",
         ax=ax5
     )
     ax5.set_title("Gasto Total por Tipo de Cliente", loc="center")
