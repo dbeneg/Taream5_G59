@@ -129,13 +129,12 @@ with col5:
     total_spend = df_filtrado.groupby("Customer type")["Total"].sum().reset_index()
     fig5, ax5 = plt.subplots(figsize=(6, 4))
 
-    custom_colors = ["#FF5733", "#33C1FF"] 
     
     sns.barplot(
         data=total_spend,
         x="Customer type",
         y="Total",
-        palette=custom_colors,
+        palette="Set1",
         ax=ax5
     )
     ax5.set_title("Gasto Total por Tipo de Cliente", loc="center")
