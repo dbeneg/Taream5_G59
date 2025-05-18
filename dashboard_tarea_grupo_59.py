@@ -124,22 +124,18 @@ with col4:
     ax4.grid(False)
     st.pyplot(fig4)
 
-    # Boxplot como complemento
-    fig_box, ax_box = plt.subplots(figsize=(6, 0.5))
-    sns.boxplot(x=df_filtrado["Rating"], ax=ax_box, color="skyblue", fliersize=3, linewidth=1, boxprops=dict(edgecolor="black"))
-    ax_box.set_xlabel("Calificación")
-    ax_box.set_yticks([])
-    st.pyplot(fig_box)
-
 
 with col5:
     total_spend = df_filtrado.groupby("Customer type")["Total"].sum().reset_index()
     fig5, ax5 = plt.subplots(figsize=(6, 4))
+
+    custom_colors = ["#FF5733", "#33C1FF"] 
+    
     sns.barplot(
         data=total_spend,
         x="Customer type",
         y="Total",
-        palette="Set1",
+        palette=custom_colors,
         ax=ax5
     )
     ax5.set_title("Gasto Total por Tipo de Cliente", loc="center")
