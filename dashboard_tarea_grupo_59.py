@@ -7,7 +7,7 @@ from datetime import date
 
 st.set_page_config(layout="wide")
 st.markdown("<h1 style='text-align: center;'>Dashboard Ventas - Grupo 59</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center;'>Equipo: Juan Osorio, Javiera Inda, Diego Beneventti, Andrea Angulo</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>Equipo: Juan Osorio, Javiera Inda, Diego Beneventti, Andrea Leiva</h4>", unsafe_allow_html=True)
 
 # Cargar datos
 df = pd.read_csv("https://raw.githubusercontent.com/dbeneg/Taream5_G59/refs/heads/main/data.csv", parse_dates=["Date"])
